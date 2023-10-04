@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body{
+  text-align: center;
+  background: linear-gradient(to bottom, #00008B, #ffffff);
+  min-height: 100vh;
+}
+
+main{
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+.pokedex{
+  width: 100%;
+  max-width: 425px;
+}
+
+.pokedex-pokemons{
+  background: #d30a40;
+  height: 39.81rem;
+  width: 26.56rem;
+  border-radius: 20px;
+  border: 2px solid #333;
+  box-shadow: -10px 6px 0 #8e062a, -15px 10px 0 #333;
+}
+
+.titulo{
+  margin: 2%;
+  padding: 4% 1%;
+  color: #000000;
+  text-align: center;
+}
+
+.titulo span{
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1.5rem);
+  font-weight: 600;
+  color: #fff;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.pokedex-lista{
+  max-height: 430px;
+  overflow: auto;
+}
+
+.lista-pokemons{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ /*background: linear-gradient(to bottom, #fafafa, #7fa2f4);*/
+  margin: 3%;
+  border-radius: 20px;
+  align-items: center;
+ 
+}
+
+.pokemon{
+  background: #fafafa;
+  max-width: 30%;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 5px;
+}
+
+.pokemon img{
+  max-width: 90px;
+  max-height: 90px;
+  background: #e0e0e0;
+}
+
+.pokemon-numero{
+  font-size: 10px;
+  text-align: left;
+}
+
+.pokemon-nome{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pokemon-tipo{
+  font-size: 10px;
+  text-align: right;
+}
+
+.volta-pesquisa{
+  position: absolute;
+  width: 65%;
+  bottom: 8%;
+  left: 15%;
+}
+
+.btn-voltapesquisa a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-voltapesquisa{
+  width: 50%;
+  padding: 2%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: #fff;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.btn-voltapesquisa:active{
+  box-shadow: inset -4px 4px 0 #000;
+  font-size: 0.9rem;
+}
